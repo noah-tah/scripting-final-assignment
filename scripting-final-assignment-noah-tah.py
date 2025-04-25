@@ -63,14 +63,25 @@ def jefferyPig():
 
 	choice = input("Enter the number of your choice: ")
 	if choice == "1":
-		desroyComputer()
+		desroyJefferysComputer()
 	elif choice == "2":
 		billyPig()
 	else:
 		print("Invalid choice. Please enter 1 or 2.")
 		jefferyPig()
 
+def desroyJefferysComputer():
+	print("You decide that Jeffery Pig is lying to you.")
+	print("You destroy his computer, and he starts crying.")
+	print("You feel bad for him, but you know you have to do it so grandma can learn that anime is totally awesome.")
 
+	print('Jeffery pig says, "You\'re a monster! You didn\'t even stop the server, you just destroyed my computer!"')
+	print('"See? Look!" he holds up his phone and shows you a livestream of Billy Pig playing Minecraft on the server.')
+	print('"I told you it wasn\'t my server!"')
+	print("You feel bad for Jeffery Pig, but you know you have to do it.")
+	print("You head over to Billy Pig's apartment.")
+
+	billyPig()
 
 	
 
