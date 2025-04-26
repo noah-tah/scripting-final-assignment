@@ -105,11 +105,11 @@ def billyPig():
 		print("He looks at you and says, 'What do you want? I'm trying to play Minecraft here!'")
 
 	print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
-	print('"It\'s really important that I prove to grandma wolf that anime is not just for kids!"')
-	print('"She needs to see that anime is a serious art form!"')
+	print('"It\'s really important that I prove to grandma wolf that anime is full of important life lessons!"')
+	print('"She needs to see that anime is a serious art form! It\'s not just for kids or weirdos!"')
 	print("Billy Pig looks at you and says, 'I don't care about your grandma, or anime! I'm trying to play Minecraft here!'")
-	print('"Also, it\'s not even my server! It\'s Theodors\'s server!"')
-	print('"He\'s the only one who knew how to set it up, and I just play on it!", he says.')
+	print('"Also, it\'s not even my server! It\'s Theodore\'s server!"')
+	print('"He\'s the only one who knew how to set it up, I just play on it and post about it on TikTok!"')
 
 	print('You say, "Are you LYING to me?", you take a few steps closer to his computer.')
 	print("Billy Pig looks at you and says, 'No, I'm not lying! I swear!'")
@@ -130,46 +130,62 @@ def billyPig():
 
 def destroyBillysComputer():
 	DestroyedComputers["billy"] = True
+	if DestroyedComputers["jeffrey"]:
+		print("You decide that Billy Pig is lying to you.")
+		print("You take the life-sized replica of the Minecraft Diamond Sword and smash his computer with it.")
+		print('"Boy this sword is great for smashing computers!", you say to yourself maniacally.')
+	else:
+		print("You decide that Billy Pig is lying to you.")
+		print("You notice he has a shrine dedicated to his time on the high school baseball team, complete with a photo of him a several pounds lighter.")
+		print("You also notice a baseball bat next to the shrine, and you decide to take it.")
+		print("With the baseball bat, you smash his computer, starting with the peripherals, ending with the tower\.")
 
-	print("You decide that Billy Pig is lying to you.")
-	print("You notice he has a shrine dedicated to his time on the high school baseball team, and it has a bat.")
-	print("You grab the bat and smash his computer, the room going dark from the sudden lack of RGB lights.")
-	print("Billy Pig starts crying, and you can see that he is really upset.")
-	print("You feel bad for him, but you know you have to do it so grandma can learn that anime is totally awesome.")
+	print("After smashing the computer, the room goes dark from the sudden lack of RGB lights.")
+	print('Billy pig is shocked and horrified, and he stands there hands spread to his sides yelling, "NOOOOOO!", Darth Vader style.')
+	print("You feel bad for him, but you know you have to do it so grandma can learn that anime can be enjoyed by all ages.")
 
 	print('Billy Pig says, "You\'re a monster! You just destroyed my computer, and I\'m not even the one hosting the server!"')
 	print('"See? Look!" he holds up his phone and shows you a livestream of Theodore Pig playing Minecraft on the server.')
 	print('"I told you it wasn\'t my server!"')
 	print("You feel bad for Billy Pig, but you know his parents are loaded anyways.")
-	print("You head over to Theodore Pig's apartment.")
+	print('"You can thank Jeffrey Pig for this, he\'s the one who told me to come here in an effort to save the server, hope it was worth it."')
 
 	theodorePig()
 
 def theodorePig():
-	print("You head over to Theodore Pig's apartment.")
-	print("You knock on the door, and Theodore Pig opens it.")
-	print("You can see that Theodore Pig is playing Minecraft on the server.")
 
 	if DestroyedComputers["jeffrey"] and DestroyedComputers["billy"]:
-		print('Theodore Pig looks at you and says, "Have you heard from Jeffrey Pig or Billy Pig? They suddenly stopped playing Minecraft."')
-		print('"We were in a diamond mining competition, and I was about to knock them into the lava!"')
-		print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
-		print('"Both of their computer have been destroyed defending this server, and it\'s time to end this!')
+		print("You head over to Theodore Pig's apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
+		print("You knock on the door with the sword, and Theodore Pig opens it, it smells strongly as he opens the door.")
+		print("You can see that Theodore Pig is playing Minecraft on the server.")
+		print('Theodore Pig looks at you and says, "Have you heard from Jeffrey Pig or Billy Pig? They suddenly stopped playing Minecraft!')
+		print('"We were in a diamond mining competition, and I was about to knock them into the lava... ", he stops and looks at the sword.')
+		print('"Wait, why do you have Jeffrey Pig\'s life-sized replica of the Minecraft Diamond Sword?"')
+		print('"Both of their computers have been destroyed defending this server, and it\'s time to end this!", you exclaim to Theodore Pig.')
 	elif DestroyedComputers["jeffrey"] or DestroyedComputers["billy"]:
 		destroyedPig = ""
 		if DestroyedComputers["jeffrey"]:
 			destroyedPig = "Jeffrey Pig"
 		else:  # Must be Billy's computer that was destroyed
 			destroyedPig = "Billy Pig"
+		print("You head over to Theodore Pig\'s apartment.")
+		print("You knock on the door, and Theodore Pig opens it. It smells strongly as he opens the door.")
+		print("You can see that Theodore Pig is playing Minecraft on the server.")
 		print(f'Theodore Pig looks at you and says, "Have you heard from {destroyedPig}? They suddenly stopped playing Minecraft."')
 		print('"We were in a diamond mining competition, and I was about to knock them into the lava!"')
-		print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
-		print('"It\'s really important that I prove to grandma wolf that anime is not just for kids or weirdos!"')
-		print('She needs to know that Naruto is not cringe, and that Attack on Titan isn\'t overrated!, you yell at a high pitch."')
-	else:
-		print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
-		print('"It\'s really important that I prove to grandma wolf that anime is not just for kids or weirdos!"')
-		print('She needs to know that Naruto is not cringe, and that Attack on Titan isn\'t overrated!, you yell at a high pitch."')
+		if destroyedPig == "Jeffrey Pig":
+			print('"Wait, why do you have a life-sized replica of the Minecraft Diamond Sword?"')
+		elif destroyedPig == "Billy Pig":
+			print('"Wait, why do you have Billy Pig\'s baseball bat? He never lets anyone touch it!", Theodore Pig says nervously.')
+		else:
+			print("You head over to Theodore Pig\'s apartment, and you knock on the door.")
+			print("Theodore Pig opens it, and as the door opens, it smells strongly inside.")
+			print("You can see that Theodore Pig is playing Minecraft on the server.")
+			print('Theodore Pig looks at you and says, "What do you want? I\'m trying to play Minecraft here!"')
+
+	print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
+	print('"It\'s really important that I prove to grandma wolf that anime is not just for kids or weirdos!"')
+	print('She needs to know that Naruto is not cringe, and that Attack on Titan isn\'t overrated!, you yell at a high pitch."')
 
 	print('Theodore Pig looks at you and says, "Dude, calm down. I forgot to pay my internet bill, but you don\'t understand! This server HAS to stay up!"' )
 	print('I run the most popular roleplay server on Minecraft, and I need it so we can play Minecraft Dungeons and Dragons!"')
@@ -190,11 +206,34 @@ def theodorePig():
 
 def destroyTheodoresComputer():
 	DestroyedComputers["theodore"] = True
-	print("You decide that you don't care about Theodore Pig's roleplay server. Grandma wolf and anime is more important.")
-	print("You destroy his computer with a nearby life sized replica of the Master Sword.")
-	print('Theodore screams "NOOOOOO!" and falls to his knees, crying.')
-	print("You feel bad for him, but you know you have to do it so grandma and you can watch anime.")
-	print("You head back to grandma wolf's house, and you can see that she\'s been waiting for you.")
+	if DestroyedComputers["jeffrey"] and DestroyedComputers["billy"]:
+		print("You decide that Theodore Pig is lying to you.")
+		print("You take the life-sized replica of the Minecraft Diamond Sword and smash his computer with it.")
+		print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
+		print('Theodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
+	elif DestroyedComputers["jeffrey"] or DestroyedComputers["billy"]:
+		destroyedPig = ""
+		if DestroyedComputers["jeffrey"]:
+			destroyedPig = "Jeffrey Pig"
+		else:  # Must be Billy's computer that was destroyed
+			destroyedPig = "Billy Pig"
+		if destroyedPig == "Billy Pig":
+			print("You decide that Theodore Pig is lying to you.")
+			print("You take the baseball bat and smash his computer with it.")
+			print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
+			print('Theodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
+	else:
+		print("You decide that Theodore Pig is lying to you.")
+		print("You find a nearby replica of the Master Sword from the Legend of Zelda, and you smash his computer with it.")
+		print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
+		print('Theodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
+	print("You feel bad for Theodore Pig, but you know you and grandma wolf will have a great time watching anime together now.")
+	print("You head back to grandma wolf's house, and you can see that she is really happy.")
+	print("You sit down with her and start watching anime together.")
+	print("You can see that she is really enjoying herself, and you know that you made the right choice.")
+	print("The End")
+	print("Thanks for playing!")
+
 
 def rolePlayWithTheodore():
 	print("You decide to let Theodore Pig keep his computer.")
