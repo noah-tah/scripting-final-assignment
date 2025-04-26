@@ -53,8 +53,8 @@ def main ():
 
 def jeffreyPig():
 	print("You head to Jeffrey Pig's apartment.")
-	print("You smell a skunk nearby, and you can hear an intense amount of clicking, they must be playing Minecraft.")
-	print("You knock on the door, and Jeffrey Pig opens it.")
+	print("You hear an intense amount of clicking and keyboard smashing. It sounds like he's really into the game.")
+	print("You knock on the door, and Jeffrey Pig opens it quickly, nearly yanking the door off the hinges.")
 	print("He looks at you and says, 'What do you want? I'm trying to play Minecraft here!'")
 	print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
 	print("My server? It's not even my server, it's Billy's server!")
@@ -81,27 +81,27 @@ def destroyJeffreysComputer():
 	DestroyedComputers["jeffrey"] = True
 
 	print("You decide that Jeffrey Pig is lying to you.")
-	print("You destroy his computer, and he starts crying.")
-	print("You feel bad for him, but you know you have to do it so grandma can learn that anime is totally awesome.")
+	print("You take his life-sized replica of the Minecraft Diamond Sword and smash his computer with it.")
+	print("You feel bad for him, but you know you have to do it so grandma can learn that anime is totally awesome, and not just for weirdos.")
 
 	print('Jeffrey Pig says, "You\'re a monster! You just destroyed my computer, and i\'m not even the one hosting the server!"')
 	print('"See? Look!" he holds up his phone and shows you a livestream of Billy Pig playing Minecraft on the server.')
 	print('"I told you it wasn\'t my server!"')
-	print("You feel bad for Jeffery Pig, but he told everyone he ordered a new PC last week.")
-	print("You head over to Billy Pig's apartment.")
-
+	print("You feel bad for Jeffery Pig, but he told everyone he ordered a new PC last week, and a break would be good for him.")
 	billyPig()
 
 def billyPig():
-	print("You head over to Billy Pig's apartment.")
-	print("You knock on the door, and Billy Pig opens it.")
-	print("You can see that Billy Pig is playing Minecraft on the server.")
-	print("You can also see that he has a new computer, and it looks like he just got it.")
-
 	if DestroyedComputers["jeffrey"]:
+		print("You head over to Billy Pig\'s apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
+		print("You knock on the door with the sowrd, and Billy Pig opens it.")
+		print("You can see that Billy Pig is playing Minecraft on the server.")
+		print("You can also see that he has a new computer, and it looks like he just got it.")
 		print('Billy Pig looks at you and says, "Have you heard from Jeffrey Pig? He suddenly stopped playing Minecraft."')
 		print('"We were in a diamond mining competition, and I was about to win!"')
+		print('"Hold on, why do you have a life-sized replica of the Minecraft Diamond Sword?"')
 	else: 
+		print("You head over to Billy Pig\'s apartment.")
+		print("You knock on the door, and Billy Pig opens it.")
 		print("He looks at you and says, 'What do you want? I'm trying to play Minecraft here!'")
 
 	print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
