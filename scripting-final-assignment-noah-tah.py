@@ -37,25 +37,24 @@ def main ():
     clear_screen()
     print("Welcome to the Three Little Pigs game!")
     print("You are a wolf, and you are trying to catch the three little pigs.")
-    print("Why are you trying to catch them you ask?")
-    print("It is because they've been mooching off grandma wolf's Wi-Fi!")
+    print("\nWhy are you trying to catch them you ask?")
+    print("\nIt is because they've been mooching off grandma wolf's Wi-Fi!")
     print("They run a very popular Minecraft server, and it lags grandma wolf's Netflix.")
     print("You're trying to show your grandma wolf that anime isn't just for kids, but the pigs keep ruining it.")
 
-    print("Thankfully, you don't have to go far, the pigs apartment complex is just behind grandma wolf's house.")
-    print("You head over to the apartment complex, it's dark outside, but you can see the glow of their computer screens through the windows.")
+    print("\nThankfully, you don't have to go far, the pigs apartment complex is just behind grandma wolf's house.")
+    print("You head over to the apartment complex, it's dark outside.")
+    print("You can see the glow of their computer screens and RGB lights through the windows.")
     print("You can see that each of them are in their own apartments, likely playing Minecraft together.")
-    print("The pigs reside in the following apartments:")
+
+
+    print("\nWhich pig do you want to catch first?")
     print("1. Jeffrey Pig - Apartment 43-1")
     print("2. Billy Pig - Apartment 70-1")
     print("3. Theodore Pig - Apartment 421-1")
 
-    print("Which pig do you want to catch first?")
-    print("1. Jeffrey Pig")
-    print("2. Billy Pig")
-    print("3. Theodore Pig")
-
-    choice = input("Enter the number of the pig you want to catch: ")
+    choice = input("\nEnter the number of the pig you want to catch: ")
+    print("You chose: " + choice)
     wait_for_input()
     
     if choice == "1":
@@ -88,6 +87,7 @@ def jeffreyPig():
     print("2. Decide he's telling the truth and go get Billy Pig")
 
     choice = input("Enter the number of your choice: ")
+    print("You chose: " + choice)
     wait_for_input()
     
     if choice == "1":
@@ -119,25 +119,27 @@ def destroyJeffreysComputer():
 def billyPig():
     clear_screen()
     if DestroyedComputers["jeffrey"]:
-        print("You head over to Billy Pig\'s apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
-        print("You knock on the door with the sowrd, and Billy Pig opens it.")
-        print("You can see that Billy Pig is playing Minecraft on the server.")
+        print("You head to Billy Pig\'s apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
+        print("You knock with the Minecraft Diamond Sword, and Billy Pig opens it.")
+        print("You see that Billy Pig has Minecraft running on his computer.")
         print("You can also see that he has a new computer, and it looks like he just got it.")
-        print('Billy Pig looks at you and says, "Have you heard from Jeffrey Pig? He suddenly stopped playing Minecraft."')
+        print('Billy Pig says, "Have you heard from Jeffrey Pig? He suddenly stopped playing Minecraft."')
         print('"We were in a diamond mining competition, and I was about to win!"')
-        print('"Hold on, why do you have a life-sized replica of the Minecraft Diamond Sword?"')
+        print('"Wait... why do you have a life-sized replica of the Minecraft Diamond Sword?"')
     else: 
         print("You head over to Billy Pig\'s apartment.")
         print("You knock on the door, and Billy Pig opens it.")
-        print("He looks at you and says, 'What do you want? I'm trying to play Minecraft here!'")
+        print("He says, 'What do you want? I'm trying to play Minecraft here!'")
 
     print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
-    print('"It\'s really important that I prove to grandma wolf that anime is full of important life lessons!"')
+    print('"It\'s really important I prove to grandma wolf that anime is full of important life lessons!"')
     print('"She needs to see that anime is a serious art form! It\'s not just for kids or weirdos!"')
-    print("Billy Pig looks at you and says, 'I don't care about your grandma, or anime! I'm trying to play Minecraft here!'")
+    print('"It\'s not just for kids or weirdos", you yell at a high pitch."')
+    print("Billy Pig replies, 'I don't care about your grandma, or anime! I'm trying to play Minecraft here!'")
     print('"Also, it\'s not even my server! It\'s Theodore\'s server!"')
-    print('"He\'s the only one who knew how to set it up, I just play on it and post about it on TikTok!"')
-
+    print('"It\'s Theodore\'s server!"')
+    print('"He\'s the only one who knew how to set it up!"')
+    print('"I just play on it and post about it on TikTok!", he says')
     print('You say, "Are you LYING to me?", you take a few steps closer to his computer.')
     print("Billy Pig looks at you and says, 'No, I'm not lying! I swear!'")
 
@@ -147,6 +149,7 @@ def billyPig():
     print("2. Decide he's telling the truth and go get Theodore Pig")
 
     choice = input("Enter the number of your choice: ")
+    print("You chose: " + choice)
     wait_for_input()
     if choice == "1":
         destroyBillysComputer()
@@ -162,13 +165,13 @@ def destroyBillysComputer():
     DestroyedComputers["billy"] = True
     if DestroyedComputers["jeffrey"]:
         print("You decide that Billy Pig is lying to you.")
-        print("You take the life-sized replica of the Minecraft Diamond Sword and smash his computer with it.")
-        print('"Boy this sword is great for smashing computers!", you say to yourself maniacally.')
+        print("You take the replica of the Minecraft Diamond Sword and smash his computer with it.")
+        print('"Boy this sword is great for smashing computers!", you say maniacally.')
     else:
         print("You decide that Billy Pig is lying to you.")
-        print("You notice he has a shrine dedicated to his time on the high school baseball team, complete with a photo of him a several pounds lighter.")
-        print("You also notice a baseball bat next to the shrine, and you decide to take it.")
-        print("With the baseball bat, you smash his computer, starting with the peripherals, ending with the tower\.")
+        print("You notice he has a shrine dedicated to his time on the high school baseball team.")
+        print("You notice that included in the shrine is a baseball bat, and it looks like it has been signed by the entire team.")
+        print("With the baseball bat, you smash his computer, starting with the peripherals, ending with the tower.")
 
     print("After smashing the computer, the room goes dark from the sudden lack of RGB lights.")
     print('Billy pig is shocked and horrified, and he stands there hands spread to his sides yelling, "NOOOOOO!", Darth Vader style.')
@@ -230,6 +233,7 @@ def theodorePig():
     print("2. Decide to let him keep his computer, and go play Minecraft with him and grandma wolf")
 
     choice = input("Enter the number of your choice: ")
+    print("You chose: " + choice)
     wait_for_input()
     if choice == "1":
         destroyTheodoresComputer()
