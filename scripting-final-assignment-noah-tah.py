@@ -19,8 +19,7 @@ DestroyedComputers = {
 	"theodore": False
 }
 
-def clear_screen():
-    """Clear the console screen based on the operating system."""
+def clearScreen():
     # For Windows
     if os.name == 'nt':
         os.system('cls')
@@ -28,13 +27,13 @@ def clear_screen():
     else:
         os.system('clear')
 
-def wait_for_input():
-    """Wait for the user to press Enter to continue."""
+def waitForInput():
+    # Wait for the user to press Enter to continue
     input("\nPress Enter to continue...")
-    clear_screen()
+    clearScreen()
 
 def main (): 
-    clear_screen()
+    clearScreen()
     print("Welcome to the Three Little Pigs game!")
     print("You are a wolf, and you are trying to catch the three little pigs.")
     print("\nWhy are you trying to catch them you ask?")
@@ -55,7 +54,7 @@ def main ():
 
     choice = input("\nEnter the number of the pig you want to catch: ")
     print("You chose: " + choice)
-    wait_for_input()
+    waitForInput()
     
     if choice == "1":
         jeffreyPig()
@@ -65,44 +64,48 @@ def main ():
         theodorePig()
     else:
         print("Invalid choice. Please enter 1, 2, or 3.")
-        wait_for_input()
+        waitForInput()
         main()
 
 
 def jeffreyPig():
-    clear_screen()
+    clearScreen()
     print("You head to Jeffrey Pig's apartment.")
-    print("You hear an intense amount of clicking and keyboard smashing. It sounds like he's really into the game.")
+    print("\nYou hear an intense amount of clicking and keyboard smashing. It sounds like he's really into the game.")
     print("You knock on the door, and Jeffrey Pig opens it quickly, nearly yanking the door off the hinges.")
-    print("He looks at you and says, 'What do you want? I'm trying to play Minecraft here!'")
-    print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
-    print("My server? It's not even my server, it's Billy's server!")
 
-    print('You say, "Are you LYING to me?"')
-    print("Jeffrey Pig looks at you and says, 'No, I'm not lying! I swear!'")
+    print("\nHe looks at you and says, 'What do you want? I'm trying to play Minecraft here!'")
 
-    print("There is a chance that Jeffrey Pig is lying to you.")
+    print('\nYou say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
+    print("\nMy server? It's not even my server, it's Billy's server!")
+
+    print('\nYou say, "Are you LYING to me?"')
+    print("\nJeffrey Pig looks at you and says, 'No, I'm not lying! I swear!'")
+
+    print("\nThere is a chance that Jeffrey Pig is lying to you.")
     print("You can either:")
     print("1. Decide he's lying and destroy his computer")
     print("2. Decide he's telling the truth and go get Billy Pig")
 
-    choice = input("Enter the number of your choice: ")
+    choice = input("\nEnter the number of your choice: ")
     print("You chose: " + choice)
-    wait_for_input()
+    waitForInput()
     
     if choice == "1":
+        print("You decide that Jeffrey Pig is lying to you.")
+        waitForInput()
         destroyJeffreysComputer()
     elif choice == "2":
         print("You decide that Jeffrey Pig is telling the truth.")
-        wait_for_input()
+        waitForInput()
         billyPig()
     else:
         print("Invalid choice. Please enter 1 or 2.")
-        wait_for_input()
+        waitForInput()
         jeffreyPig()
 
 def destroyJeffreysComputer():
-    clear_screen()
+    clearScreen()
     DestroyedComputers["jeffrey"] = True
 
     print("You decide that Jeffrey Pig is lying to you.")
@@ -113,11 +116,11 @@ def destroyJeffreysComputer():
     print('"See? Look!" he holds up his phone and shows you a livestream of Billy Pig playing Minecraft on the server.')
     print('"I told you it wasn\'t my server!"')
     print("You feel bad for Jeffery Pig, but he told everyone he ordered a new PC last week, and a break would be good for him.")
-    wait_for_input()
+    waitForInput()
     billyPig()
 
 def billyPig():
-    clear_screen()
+    clearScreen()
     if DestroyedComputers["jeffrey"]:
         print("You head to Billy Pig\'s apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
         print("You knock with the Minecraft Diamond Sword, and Billy Pig opens it.")
@@ -150,18 +153,18 @@ def billyPig():
 
     choice = input("Enter the number of your choice: ")
     print("You chose: " + choice)
-    wait_for_input()
+    waitForInput()
     if choice == "1":
         destroyBillysComputer()
     elif choice == "2":
         theodorePig()
     else:
         print("Invalid choice. Please enter 1 or 2.")
-        wait_for_input()
+        waitForInput()
         billyPig()
 
 def destroyBillysComputer():
-    clear_screen()
+    clearScreen()
     DestroyedComputers["billy"] = True
     if DestroyedComputers["jeffrey"]:
         print("You decide that Billy Pig is lying to you.")
@@ -187,7 +190,7 @@ def destroyBillysComputer():
 
 def theodorePig():
 
-    clear_screen()
+    clearScreen()
     if DestroyedComputers["jeffrey"] and DestroyedComputers["billy"]:
         print("You head over to Theodore Pig's apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
         print("You knock on the door with the sword, and Theodore Pig opens it, it smells strongly as he opens the door.")
@@ -234,14 +237,14 @@ def theodorePig():
 
     choice = input("Enter the number of your choice: ")
     print("You chose: " + choice)
-    wait_for_input()
+    waitForInput()
     if choice == "1":
         destroyTheodoresComputer()
     elif choice == "2":
         rolePlayWithTheodore()
 
 def destroyTheodoresComputer():
-    clear_screen()
+    clearScreen()
     DestroyedComputers["theodore"] = True
     if DestroyedComputers["jeffrey"] and DestroyedComputers["billy"]:
         print("You decide that Theodore Pig is lying to you.")
@@ -275,7 +278,7 @@ def destroyTheodoresComputer():
     input("\nPress Enter to exit...")
 
 def rolePlayWithTheodore():
-    clear_screen()
+    clearScreen()
     print("You decide to let Theodore Pig keep his computer.")
     print("You head inside and start playing Minecraft with him and grandma wolf.")
     print("You all have a great time, and you can see that grandma wolf is really enjoying herself.")
