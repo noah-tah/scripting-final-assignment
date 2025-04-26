@@ -17,7 +17,7 @@ DestroyedComputers = {
 	"theodore": False
 }
 
-def main (void): 
+def main (): 
 	print("Welcome to the Three Little Pigs game!")
 	print("You are a wolf, and you are trying to catch the three little pigs.")
 	print("Why are you trying to catch them you ask?")
@@ -182,20 +182,29 @@ def theodorePig():
 	print("1. Decide you don't care, and destroy his computer for ruining you and grandma wolf's anime time")
 	print("2. Decide to let him keep his computer, and go play Minecraft with him and grandma wolf")
 
+	choice = input("Enter the number of your choice: ")
 	if choice == "1":
 		destroyTheodoresComputer()
 	elif choice == "2":
 		rolePlayWithTheodore()
 
+def destroyTheodoresComputer():
+	DestroyedComputers["theodore"] = True
+	print("You decide that you don't care about Theodore Pig's roleplay server. Grandma wolf and anime is more important.")
+	print("You destroy his computer with a nearby life sized replica of the Master Sword.")
+	print('Theodore screams "NOOOOOO!" and falls to his knees, crying.')
+	print("You feel bad for him, but you know you have to do it so grandma and you can watch anime.")
+	print("You head back to grandma wolf's house, and you can see that she\'s been waiting for you.")
+
+def rolePlayWithTheodore():
+	print("You decide to let Theodore Pig keep his computer.")
+	print("You head inside and start playing Minecraft with him and grandma wolf.")
+	print("You all have a great time, and you can see that grandma wolf is really enjoying herself.")
+	print("You all play Minecraft for hours, and you can see that grandma wolf is really happy.")
+	print("You feel good about yourself, and you know that you made the right choice.")
+
+	print("The End")
+	print("Thanks for playing!")
 
 
-
-
-
-	choice = input("Enter the number of your choice: ")
-	if choice == "1":
-		destroyTheodoresComputer()
-	elif choice == "2":
-		getGrandmaWolf()
-	else
 main()
