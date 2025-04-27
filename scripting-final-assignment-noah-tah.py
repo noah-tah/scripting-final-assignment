@@ -89,7 +89,7 @@ def jeffreyPig():
     print("\nJeffrey Pig looks at you and says, 'No, I'm not lying! I swear!'")
 
     print("\nThere is a chance that Jeffrey Pig is lying to you.")
-    print("You can either:")
+    print("\nYou can either:")
     print("1. Decide he's lying and destroy his computer")
     print("2. Decide he's telling the truth and go get Billy Pig")
 
@@ -148,7 +148,7 @@ def billyPig():
         print("\nHe says, 'What do you want? I'm trying to play Minecraft here!'")
         waitForInput()
     print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
-    print('"I must prove to grandma wolf that anime teaches life lessons!"')
+    print('\n"I must prove to grandma wolf that anime teaches life lessons!"')
     print('"Anime is a serious art form!"')
     waitForInput()
     print("\nBilly Pig replies, 'I don't care about your grandma, or anime! I'm trying to play Minecraft here!'")
@@ -161,7 +161,7 @@ def billyPig():
     print("\nBilly Pig looks at you and says, 'No, I'm not lying! I swear!'")
 
     print("There is a chance that Billy Pig is lying to you.")
-    print("You can either:")
+    print("\nYou can either:")
     print("1. Decide he's lying and destroy his computer")
     print("2. Decide he's telling the truth and go get Theodore Pig")
 
