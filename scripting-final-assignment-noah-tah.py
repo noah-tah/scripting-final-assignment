@@ -149,7 +149,7 @@ def billyPig():
         waitForInput()
     print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
     print('\n"I must prove to grandma wolf that anime teaches life lessons!"')
-    print('"Anime is a serious art form!"')
+    print('\n"Anime is a serious art form!"')
     waitForInput()
     print("\nBilly Pig replies, 'I don't care about your grandma, or anime! I'm trying to play Minecraft here!'")
     print('"Also, it\'s not even my server!"')
