@@ -182,7 +182,7 @@ def destroyBillysComputer():
     DestroyedComputers["billy"] = True
     if DestroyedComputers["jeffrey"]:
         print("You decide that Billy Pig is lying to you.")
-        print("You take the replica of the Minecraft Diamond Sword and smash his computer with it.")
+        print("\nYou take the replica of the Minecraft Diamond Sword and smash his computer with it.")
         print('"Boy this sword is great for smashing computers!", you say maniacally.')
     else:
         print("You decide that Billy Pig is lying to you.")
@@ -193,7 +193,7 @@ def destroyBillysComputer():
         waitForInput()
 
     print("After smashing the computer, the room goes dark from the sudden lack of RGB lights.")
-    print('\nBilly pig is shocked and horrified, and he stands there hands spread to his sides yelling, "NOOOOOO!", Darth Vader style.')
+    print('\nBilly Pig stood there, hands spread to his sides yelling, "NOOOOOO!", in true Darth Vader style.')
     print("\nYou feel bad for him, but you know you have to do it so grandma can learn that anime can be enjoyed by all ages.")
     waitForInput()
 
@@ -202,8 +202,15 @@ def destroyBillysComputer():
     print('"I told you it wasn\'t my server!"')
     waitForInput()
 
-    print("You feel bad for Billy Pig, but you know his parents are loaded anyways.")
-    print('\n"You can thank Jeffrey Pig for this, he\'s the one who told me to come here in an effort to save the server, hope it was worth it."')
+    if DestroyedComputers["jeffrey"]:
+        print('\nYou say, "You can thank Jeffrey Pig for this."')
+        print('"He wouldn\'t tell me who was hosting the server, so I had to destroy both of your computers."')
+    else:
+        print('\nBilly Pig looks at you and says, "You\'re a monster! You just destroyed my computer!"')
+        print("You feel bad for Billy Pig, but you know his parents are loaded anyways.")
+
+
+    print("\nYou leave Billy Pig's apartment.")
     waitForInput()
     
     theodorePig()
