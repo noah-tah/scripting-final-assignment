@@ -186,10 +186,11 @@ def destroyBillysComputer():
         print('"Boy this sword is great for smashing computers!", you say maniacally.')
     else:
         print("You decide that Billy Pig is lying to you.")
-        print("You notice he has a shrine dedicated to his time on the high school baseball team.")
-        print("You notice that included in the shrine is a baseball bat, and it looks like it has been signed by the entire team.")
-        print("With the baseball bat, you smash his computer, starting with the peripherals, ending with the tower.")
-    waitForInput()
+        print("\nYou notice he has a shrine dedicated to his time on the high school baseball team.")
+        print("You also notice included in the shrine, is a baseball bat.")
+        print("It looks like it has been signed by the entire team.")
+        print("\nYou take the bat, you smash his computer, starting with the peripherals, ending with the tower.")
+        waitForInput()
 
     print("After smashing the computer, the room goes dark from the sudden lack of RGB lights.")
     print('\nBilly pig is shocked and horrified, and he stands there hands spread to his sides yelling, "NOOOOOO!", Darth Vader style.')
