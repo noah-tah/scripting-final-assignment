@@ -108,14 +108,18 @@ def destroyJeffreysComputer():
     clearScreen()
     DestroyedComputers["jeffrey"] = True
 
-    print("You decide that Jeffrey Pig is lying to you.")
     print("You take his life-sized replica of the Minecraft Diamond Sword and smash his computer with it.")
-    print("You feel bad for him, but you know you have to do it so grandma can learn that anime is totally awesome, and not just for weirdos.")
 
-    print('Jeffrey Pig says, "You\'re a monster! You just destroyed my computer, and i\'m not even the one hosting the server!"')
+    print("\nYou feel bad for him, but you know you have to do it.")
+    print("This is for grandma wolf and anime, and you know she would want yout to do this.")
+
+    print('\nJeffrey Pig yells, "You\'re a monster! You just destroyed my computer!"')
+    print("I am not even the one hosting the server!")
     print('"See? Look!" he holds up his phone and shows you a livestream of Billy Pig playing Minecraft on the server.')
     print('"I told you it wasn\'t my server!"')
-    print("You feel bad for Jeffery Pig, but he told everyone he ordered a new PC last week, and a break would be good for him.")
+    print("\nYou feel bad for Jeffery Pig, but he told everyone he ordered a new PC last week.")
+    print("He needs a break from Minecraft anyways, and you know he will be fine.")
+    print("\nYou leave his apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
     waitForInput()
     billyPig()
 
