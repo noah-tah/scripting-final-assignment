@@ -203,7 +203,7 @@ def destroyBillysComputer():
     waitForInput()
 
     if DestroyedComputers["jeffrey"]:
-        print('\nYou say, "You can thank Jeffrey Pig for this."')
+        print('You say, "You can thank Jeffrey Pig for this."')
         print('"He wouldn\'t tell me who was hosting the server, so I had to destroy both of your computers."')
     else:
         print('\nBilly Pig looks at you and says, "You\'re a monster! You just destroyed my computer!"')
@@ -219,7 +219,7 @@ def theodorePig():
     clearScreen()
     if DestroyedComputers["jeffrey"] and DestroyedComputers["billy"]:
         print("You head over to Theodore Pig's apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
-        print("You knock on the door with the sword, and Theodore Pig opens it, it smells strongly as he opens the door.")
+        print("\nYou knock on the door with the sword, and Theodore Pig opens it, it smells strongly as he opens the door.")
         print("\nYou can see that Theodore Pig is playing Minecraft on the server.")
         waitForInput()
         
@@ -228,7 +228,8 @@ def theodorePig():
         print('\n"Wait, why do you have Jeffrey Pig\'s life-sized replica of the Minecraft Diamond Sword?"')
         waitForInput()
         
-        print('"Both of their computers have been destroyed defending this server, and it\'s time to end this!", you exclaim to Theodore Pig.')
+        print('"Both of their computers have been destroyed defending this server...')
+        print('\n"It\'s time to end this once and for all!"')
         waitForInput()
     elif DestroyedComputers["jeffrey"] or DestroyedComputers["billy"]:
         destroyedPig = ""
@@ -259,20 +260,20 @@ def theodorePig():
         waitForInput()
 
     print('You say, "Your minecraft server is lagging grandma wolf\'s Netflix and we can\'t watch anime!"')
-    print('"It\'s really important that I prove to grandma wolf that anime is not just for kids or weirdos!"')
-    print('\nShe needs to know that Naruto is not cringe, and that Attack on Titan isn\'t overrated!", you yell at a high pitch.')
+    print('"I must prove to grandma wolf that anime teaches life lessons!"')
+    print('\nShe needs to know that Naruto is not cringe, and that Attack on Titan isn\'t overrated!"')
     waitForInput()
 
-    print('Theodore Pig looks at you and says, "Dude, calm down. I forgot to pay my internet bill, but you don\'t understand! This server HAS to stay up!"')
+    print('Theodore Pig says, "Dude, calm down. I forgot to pay my internet bill..."')
+    print("But you don\'t understand, the server HAS to stay up!")
     print('\nI run the most popular roleplay server on Minecraft, and I need it so we can play Minecraft Dungeons and Dragons!"')
-    print('"I was going to be a grey dwarf bard, and I was going to howl sweet melodies into the night!')
+    print('\n"I was going to be a grey dwarf bard, and I was going to howl sweet melodies into the night!')
     waitForInput()
     
     print('"How about you and grandma wolf come play with us? We can roleplay Sword Art Online, and you can be Kirito!')
     print("\nTheodore Pig has presented us with an interesting choice, Kirito is a pretty cool character.")
-    waitForInput()
 
-    print("You can either:")
+    print("\nYou can either:")
     print("1. Decide you don't care, and destroy his computer for ruining you and grandma wolf's anime time")
     print("2. Decide to let him keep his computer, and go play Minecraft with him and grandma wolf")
 
@@ -295,8 +296,8 @@ def destroyTheodoresComputer():
     
     if DestroyedComputers["jeffrey"] and DestroyedComputers["billy"]:
         print("You decide that Theodore Pig is lying to you.")
-        print("You take the life-sized replica of the Minecraft Diamond Sword and smash his computer with it.")
-        print('\n"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
+        print("\nYou take the life-sized replica of the Minecraft Diamond Sword and smash his computer with it.")
+        print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
         print('\nTheodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
     elif DestroyedComputers["jeffrey"] or DestroyedComputers["billy"]:
         destroyedPig = ""
@@ -307,13 +308,13 @@ def destroyTheodoresComputer():
             
         if destroyedPig == "Billy Pig":
             print("You decide that Theodore Pig is lying to you.")
-            print("You take the baseball bat and smash his computer with it.")
-            print('\n"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
+            print("\nYou take the baseball bat and smash his computer with it.")
+            print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
             print('\nTheodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
         else:
             print("You decide that Theodore Pig is lying to you.")
-            print("You find a nearby replica of the Master Sword from the Legend of Zelda, and you smash his computer with it.")
-            print('\n"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
+            print("\nYou find a nearby replica of the Master Sword from the Legend of Zelda, and you smash his computer with it.")
+            print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
             print('\nTheodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
     waitForInput()
     
