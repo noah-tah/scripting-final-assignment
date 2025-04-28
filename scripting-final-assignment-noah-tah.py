@@ -311,11 +311,11 @@ def destroyTheodoresComputer():
             print("\nYou take the baseball bat and smash his computer with it.")
             print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
             print('\nTheodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
-        else:
-            print("You decide that Theodore Pig is lying to you.")
-            print("\nYou find a nearby replica of the Master Sword from the Legend of Zelda, and you smash his computer with it.")
-            print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
-            print('\nTheodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
+    else:
+        print("You decide that Theodore Pig is lying to you.")
+        print("\nYou find a nearby replica of the Master Sword from the Legend of Zelda, and you smash his computer with it.")
+        print('"You think you can just run a server on my grandma\'s Wi-Fi and get away with it?"')
+        print('\nTheodore Pig looks at you and cries out, "We could have worked this out! You\'re a monster!"')
     waitForInput()
     
     print("You feel bad for Theodore Pig, but you know you and grandma wolf will have a great time watching anime together now.")
