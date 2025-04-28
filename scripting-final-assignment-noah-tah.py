@@ -52,11 +52,11 @@ def main ():
 
 
     print("Which pig do you want to catch first?")
-    print("1. Jeffrey Pig - Apartment 43-1")
-    print("2. Billy Pig - Apartment 70-1")
-    print("3. Theodore Pig - Apartment 421-1")
+    print("  1. Jeffrey Pig - Apartment 43-1")
+    print("  2. Billy Pig - Apartment 70-1")
+    print("  3. Theodore Pig - Apartment 421-1")
 
-    choice = input("\nEnter the number of the pig you want to catch: ")
+    choice = input("\nEnter your choice (1-3): ")
     print("You chose: " + choice)
     waitForInput()
 
@@ -117,14 +117,14 @@ def destroyJeffreysComputer():
     print("You take his life-sized replica of the Minecraft Diamond Sword and smash his computer with it.")
 
     print("\nYou feel bad for him, but you know you have to do it.")
-    print("This is for grandma wolf and anime, and you know she would want yout to do this.")
+    print("This is for grandma wolf and anime, and you know she would want you to do this.")
     waitForInput()
 
     print('Jeffrey Pig yells, "You\'re a monster! You just destroyed my computer!"')
     print("I am not even the one hosting the server!")
     print('\n"See? Look!" he holds up his phone and shows you a livestream of Billy Pig playing Minecraft on the server.')
     print('"I told you it wasn\'t my server!"')
-    print("\nYou feel bad for Jeffery Pig, but he told everyone he ordered a new PC last week.")
+    print("\nYou feel bad for Jeffrey Pig, but you know he ordered a new PC last week.")
     print("He needs a break from Minecraft anyways, and you know he will be fine.")
     print("\nYou leave his apartment, carrying the life-sized replica of the Minecraft Diamond Sword.")
     waitForInput()
@@ -265,8 +265,8 @@ def theodorePig():
     waitForInput()
 
     print('Theodore Pig says, "Dude, calm down. I forgot to pay my internet bill..."')
-    print("But you don\'t understand, the server HAS to stay up!")
-    print('\nI run the most popular roleplay server on Minecraft, and I need it so we can play Minecraft Dungeons and Dragons!"')
+    print('"But you don\'t understand, the server HAS to stay up!"')
+    print('\n"I run the most popular roleplay server on Minecraft, and I need it so we can play Minecraft Dungeons and Dragons!"')
     print('\n"I was going to be a grey dwarf bard, and I was going to howl sweet melodies into the night!')
     waitForInput()
     
